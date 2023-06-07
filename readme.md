@@ -10,6 +10,13 @@ TorGhost is an anonymization script. TorGhost redirects all internet traffic thr
 
 `./build.sh`
 
+### Fix for "torghost.c:6:10: fatal error: Python.h: No such file or directory"
+Simply go inside 'build.sh' file and edit the 
+"gcc -Os -I /usr/include/python3.8 -o torghost torghost.c -lpython3.8 -lpthread -lm -lutil -ldl" 
+to
+"gcc -Os -I /usr/include/python[YOUR-PYTHON-VERSIO] -o torghost torghost.c -lpython[YOUR-PYTHON-VERSIO] -lpthread -lm -lutil -ldl"
+It will now build and compile. Cheers!
+
 ## How to install ?
 **New kali update is causing permission error, please build and install from source**
 
@@ -22,7 +29,6 @@ TorGhost is an anonymization script. TorGhost redirects all internet traffic thr
 ~~In the downloaded folder use dpkg to install~~
 
 ~~`sudo dpkg -i torghost-*-amd64.deb`~~
-
 
 
 #### Alternate method (support for previous install script)

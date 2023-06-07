@@ -14,7 +14,7 @@ TorGhost is an anonymization script. TorGhost redirects all internet traffic thr
 Simply go inside 'build.sh' file and edit the 
 "gcc -Os -I /usr/include/python3.8 -o torghost torghost.c -lpython3.8 -lpthread -lm -lutil -ldl" 
 to
-"gcc -Os -I /usr/include/python[YOUR-PYTHON-VERSIO] -o torghost torghost.c -lpython[YOUR-PYTHON-VERSIO] -lpthread -lm -lutil -ldl"
+"gcc -Os -I /usr/include/python[YOUR-PYTHON-VERSION] -o torghost torghost.c -lpython[YOUR-PYTHON-VERSION] -lpthread -lm -lutil -ldl"
 It will now build and compile. Cheers!
 
 ## How to install ?
